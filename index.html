@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch This Short Video to Discover the Secret</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background-color: #2d3748;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    .container { max-width: 1100px; margin: 0 auto; padding: 80px 20px; text-align: center; }
+    h1 { 
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 700;
+      margin-bottom: 25px;
+      line-height: 1.2;
+    }
+    .subheadline { 
+      font-size: clamp(1.1rem, 2vw, 1.4rem);
+      margin-bottom: 60px;
+      opacity: 0.9;
+    }
+    .video-container { 
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      margin: 50px auto;
+      border: 4px solid #10b981;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    }
+    .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    .vsl-image { 
+      width: 100%;
+      max-width: 850px;
+      height: auto;
+      margin: 50px auto;
+      display: block;
+      border-radius: 10px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    }
+    .benefits-box { 
+      padding: 50px 40px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 10px;
+      margin: 60px auto;
+      max-width: 800px;
+    }
+    .benefits-box h2 { 
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    .benefits-list { 
+      text-align: left;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .benefit-item { 
+      display: flex;
+      align-items: start;
+      gap: 15px;
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+    }
+    .check-icon { width: 24px; height: 24px; flex-shrink: 0; fill: #10b981; margin-top: 5px; }
+    .btn-cta {
+      display: inline-block;
+      padding: 25px 70px;
+      background: #10b981;
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 15px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+      transition: all 0.2s;
+      margin: 30px 0;
+    }
+    .btn-cta:hover { transform: translateY(-3px); }
+    .guarantee { margin-top: 25px; font-size: 1.1rem; opacity: 0.8; }
+    .testimonials-section { padding: 80px 20px; background: rgba(255,255,255,0.05); margin: 80px 0; }
+    .testimonials-grid { 
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .testimonial { 
+      padding: 30px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.05);
+    }
+    .stars { display: flex; gap: 5px; margin-bottom: 15px; }
+    .star { width: 20px; height: 20px; fill: #3b82f6; }
+    .faq-section { padding: 80px 20px; }
+    .faq-container { max-width: 900px; margin: 0 auto; }
+    .faq-item { 
+      margin-bottom: 15px;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .faq-question { 
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1.1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-answer { padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.3s, padding 0.3s; }
+    .faq-item.active .faq-answer { padding: 20px; max-height: 500px; }
+    .faq-toggle { font-size: 1.5rem; transition: transform 0.3s; }
+    .faq-item.active .faq-toggle { transform: rotate(45deg); }
+    footer { 
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 0.85rem;
+      opacity: 0.6;
+      background: rgba(255,255,255,0.05);
+    }
+    footer a { color: inherit; text-decoration: none; margin: 0 15px; }
+    @media (max-width: 768px) {
+      .btn-cta { width: 100%; padding: 20px 30px; font-size: 1.4rem; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Watch This Short Video to Discover the Secret</h1>
+    <p class="subheadline">What you are about to see could change everything - but only if you watch until the end</p>
+    
+    
+    
+    
+    <div class="benefits-box">
+      <h2>What You'll Learn:</h2>
+      <div class="benefits-list">
+        
+          <div class="benefit-item">
+            <svg class="check-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span>Simple system revealed in complete detail</span>
+          </div>
+        
+          <div class="benefit-item">
+            <svg class="check-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span>No prior experience or special skills required</span>
+          </div>
+        
+          <div class="benefit-item">
+            <svg class="check-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span>Works for anyone willing to follow the steps</span>
+          </div>
+        
+          <div class="benefit-item">
+            <svg class="check-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span>Proven results from thousands of users</span>
+          </div>
+        
+      </div>
+    </div>
+    
+    
+    <a href="https://example.com/checkout" class="btn-cta">Get Instant Access to Full Training</a>
+    
+    <p class="guarantee">30-Day Money Back Guarantee</p>
+  </div>
+  
+  
+  <div class="testimonials-section">
+    <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; text-align: center; margin-bottom: 60px;">Success Stories</h2>
+    <div class="testimonials-grid">
+      
+        <div class="testimonial">
+          <div class="stars">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          </div>
+          <p style="margin-bottom: 15px;">"I almost clicked away, but I am so glad I watched the whole video. This changed my life."</p>
+          <p style="font-weight: 700;">Chris Thompson</p>
+        </div>
+      
+        <div class="testimonial">
+          <div class="stars">
+            <svg class="star" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg class="star" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          </div>
+          <p style="margin-bottom: 15px;">"The video explained everything perfectly. I finally understand what I was doing wrong."</p>
+          <p style="font-weight: 700;">Nicole Davis</p>
+        </div>
+      
+    </div>
+  </div>
+  
+  
+  
+  <div class="faq-section">
+    <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; text-align: center; margin-bottom: 60px;">FAQ</h2>
+    <div class="faq-container">
+      
+        <div class="faq-item">
+          <div class="faq-question">
+            How long is the video?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">Just 27 minutes that could change your life forever.</div>
+        </div>
+      
+        <div class="faq-item">
+          <div class="faq-question">
+            Do I need to watch it all?
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">Yes! The most important parts are revealed at the end. Do not miss them.</div>
+        </div>
+      
+    </div>
+  </div>
+  
+  
+  <footer>
+    <p style="margin-bottom: 20px;">* Results may vary. All sales are final and subject to our terms and conditions.</p>
+    <div>
+      
+      
+      
+    </div>
+  </footer>
+  
+  <script>
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', function() {
+        const item = this.parentElement;
+        const isActive = item.classList.contains('active');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+        if (!isActive) item.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
